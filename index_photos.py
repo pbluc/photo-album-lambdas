@@ -30,7 +30,7 @@ def lambda_handler(event, context):
     
     bucket = event['Records'][0]['s3']['bucket']['name']
     photo = event['Records'][0]['s3']['object']['key']
-    #print(photo)
+    # print(photo)
     
     response = rek.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
     
