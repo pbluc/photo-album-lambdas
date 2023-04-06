@@ -1,0 +1,3 @@
+inflection==0.5.1
+opensearchpy==2.1.1
+requests_aws4auth==1.2.2
