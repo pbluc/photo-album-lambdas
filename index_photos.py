@@ -42,7 +42,6 @@ def lambda_handler(event, context):
     if 'customlabels' in obj_summary['Metadata']:
         custom_labels = obj_summary['Metadata']['customlabels'].split(",")
         labels = [customLabel.lower() for customLabel in custom_labels]
-        #print(labels)
         
     for label in response['Labels']:
         labels.append(label['Name'].lower())
