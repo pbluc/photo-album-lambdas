@@ -45,7 +45,7 @@ def lambda_handler(event, context):
         
     for label in response['Labels']:
         labels.append(label['Name'].lower())
-    # print(labels)
+    #print(labels)
     
     document = {
         'objectKey': photo,
