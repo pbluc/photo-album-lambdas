@@ -35,7 +35,7 @@ def lambda_handler(event, context):
     response = rek.detect_labels(Image={'S3Object':{'Bucket':bucket,'Name':photo}})
     
     obj_summary = s3.head_object(Bucket=bucket, Key=photo)
-    #print(obj_summary)
+    # print(obj_summary)
     created_timestamp = obj_summary['LastModified']
     
     labels = []
